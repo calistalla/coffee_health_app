@@ -1,27 +1,39 @@
 # ☕ Global Coffee & Health Dashboard
 
-This Streamlit app explores the relationship between **coffee consumption** and various **health metrics** such as BMI, heart rate, and sleep hours.  
-It allows users to interactively filter data by **age**, **gender**, **country**, and **lifestyle habits (smoking)** to reveal patterns and correlations.
+This interactive **Streamlit dashboard** explores the relationship between **coffee consumption** and various **health metrics** such as BMI, heart rate, and sleep hours.  
+Users can filter by age, country, gender, and smoking status to dynamically view data, correlations, and statistical comparisons.
 
+---
 
 ## 🚀 Features
 
-- **Interactive Sidebar Filters**
-  - Select age range, gender, countries, and smoking habits.
-- **Data Visualization**
-  - Scatter plots showing coffee intake vs. BMI and heart rate.
-  - Histogram for sleep hours distribution.
-  - Bar chart for average coffee intake by country.
-- **Statistical Analysis**
-  - Pearson correlation coefficients between variables.
-  - ANOVA test to compare coffee intake across countries.
-- **Summary Insights**
-  - Auto-generated interpretation of findings.
+### 🔍 Sidebar Filters
+- **Age range selector** — filter participants by age.  
+- **Country multiselect** — compare across selected countries.  
+- **Gender filter** — focus on male, female, or all participants.  
+- **Smoker filter** — restrict data to smokers only.
 
-## 🧠 Dataset
+### 📊 Problem A: Coffee vs. Health Metrics
+- Scatter plots showing:
+  - **Coffee intake vs. BMI**
+  - **Coffee intake vs. Heart Rate**
+- Pearson correlation table for `Coffee_Intake`, `BMI`, `Heart_Rate`, and `Sleep_Hours`.
 
-The app reads from an Excel file named `synthetic_coffee_health_10000.xlsx`.
+### 🌍 Problem B: Group Differences
+- Bar plot of **average coffee intake by country**.  
+- Histogram of **sleep hours distribution**.  
+- Summary statistics table by country.  
+- **ANOVA test** comparing coffee intake between countries.
 
-To use your own dataset:
-1. Replace the file path in the code with your uploaded file.
-2. Ensure the dataset includes the following columns:
+---
+
+## 🧠 Insights Example
+
+- Higher coffee intake shows **moderate correlation** with **BMI** and **Heart Rate**.  
+- Sleep duration tends to **slightly decrease** with higher coffee intake.  
+- Significant **cross-country differences** exist in coffee consumption patterns.  
+
+---
+
+##  Dataset
+The app reads from an csv file named `synthetic_coffee_health_10000.csv`.
