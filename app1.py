@@ -33,17 +33,12 @@ gender = st.sidebar.radio(
     ["All", "Male", "Female"]
 )
 
-smokers_only = st.sidebar.checkbox("Show only smokers")
-
 filtered_df = df[
     (df['Age'] >= age_range[0]) & (df['Age'] <= age_range[1]) &
     (df['Country'].isin(countries))
 ]
 if gender != "All":
     filtered_df = filtered_df[filtered_df['Gender'].str.lower() == gender.lower()]
-if smokers_only:
-    filtered_df = filtered_df[filtered_df['Smoking'].astype(str).str.lower() == "yes"]
-
 
 st.subheader("🧾 Filtered Data Preview")
 st.write(filtered_df.head())
@@ -91,19 +86,11 @@ ax.set_title("Average Coffee Intake by Country")
 st.pyplot(fig)
 
 st.subheader("🛏 Sleep Hours Distribution")
-if "Country" in filtered_df.columns and "Coffee_Intake" in filtered_df.columns and not filtered_df.empty:
-    fig, ax = plt.subplots()
-    (
-        filtered_df.groupby("Country")["Coffee_Intake"]
-        .mean()
-        .sort_values()
-        .plot(kind="bar", ax=ax, color="skyblue")
-    )
-    ax.set_xlabel("Country")
-    ax.set_ylabel("Average Coffee Intake (cups/day)")
-    st.pyplot(fig)
-else:
-    st.warning("⚠️ 没有可用的数据来绘制平均咖啡摄入量图表，请检查过滤条件或数据列。")
+fig, ax = plt.subplots()
+sns.histplot(filtered_df["Sleep_Hours"], bins=10, kde=True, color="lightgreen", ax=ax)
+ax.set_xlabel("Sleep Hours")
+ax.set_ylabel("Count")
+st.pyplot(fig)
 
 st.subheader("📊 Summary Statistics by Country")
 summary_stats = filtered_df.groupby("Country")[["Coffee_Intake", "BMI", "Heart_Rate", "Sleep_Hours"]].mean().round(2)
