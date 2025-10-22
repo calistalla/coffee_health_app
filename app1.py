@@ -42,7 +42,8 @@ filtered_df = df[
 if gender != "All":
     filtered_df = filtered_df[filtered_df['Gender'].str.lower() == gender.lower()]
 if smokers_only:
-    filtered_df = filtered_df[filtered_df['Smoking'].str.lower() == "yes"]
+    filtered_df = filtered_df[filtered_df['Smoking'].astype(str).str.lower() == "yes"]
+
 
 st.subheader("🧾 Filtered Data Preview")
 st.write(filtered_df.head())
