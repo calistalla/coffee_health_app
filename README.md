@@ -37,3 +37,8 @@ Users can filter by age, country, gender, and smoking status to dynamically view
 
 ##  Dataset
 The app reads from an csv file named `synthetic_coffee_health_10000.csv`.
+
+---
+
+## How to run this app
+open<https://coffeehealthapp-aqna9vvkgqj5r6rljnrmvr.streamlit.app/#average-coffee-intake-by-country>
