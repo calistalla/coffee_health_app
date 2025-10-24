@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import scipy.stats as stats
 
-st.set_page_config(page_title="Global Coffee & Health Dashboard", layout="wide")
+st.set_page_config(page_title="☕Global Coffee & Health Dashboard", layout="wide")
 st.title(" Global Coffee & Health Data Explorer")
 
 st.markdown("""
