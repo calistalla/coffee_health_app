@@ -5,21 +5,21 @@ Users can filter by age, country, gender, and smoking status to dynamically view
 
 ---
 
-## 🚀 Features
+##  Features
 
-### 🔍 Sidebar Filters
- **Age range selector** — filter participants by age.  
- **Country multiselect** — compare across selected countries.  
- **Gender filter** — focus on male, female, or all participants.  
- **Smoker filter** — restrict data to smokers only.
+###  Sidebar Filters
+ 1. **Age range selector** — filter participants by age.  
+ 2. **Country multiselect** — compare across selected countries.  
+ 3. **Gender filter** — focus on male, female, or all participants.  
+ 4. **Smoker filter** — restrict data to smokers only.
 
-### 📊 Problem A: Coffee vs. Health Metrics
+###  Problem A: Coffee vs. Health Metrics
  Scatter plots showing:
    1. **Coffee intake vs. BMI**
    2. **Coffee intake vs. Heart Rate**
  Pearson correlation table for `Coffee_Intake`, `BMI`, `Heart_Rate`, and `Sleep_Hours`.
 
-### 🌍 Problem B: Group Differences
+###  Problem B: Group Differences
  1. Bar plot of **average coffee intake by country**.  
  2. Histogram of **sleep hours distribution**.  
  3. Summary statistics table by country.  
@@ -27,7 +27,7 @@ Users can filter by age, country, gender, and smoking status to dynamically view
 
 ---
 
-## 🧠 Insights Example
+##  Insights Example
 
 1. Higher coffee intake shows **moderate correlation** with **BMI** and **Heart Rate**.  
 2. Sleep duration tends to **slightly decrease** with higher coffee intake.  
