@@ -124,10 +124,10 @@ else:
 st.markdown("""
 ---
 ### Summary of Findings
-- **Higher coffee intake** shows moderate correlation with **BMI** and **Heart Rate**.
-- **Sleep Hours** tend to decrease slightly with higher coffee intake.
-- **Significant cross-country differences** exist in coffee consumption (see ANOVA test).
-- These findings vary by **age, gender**, and **lifestyle factors** like smoking.
+1. **Higher coffee intake** shows moderate correlation with **BMI** and **Heart Rate**.
+2. **Sleep Hours** tend to decrease slightly with higher coffee intake.
+3. **Significant cross-country differences** exist in coffee consumption (see ANOVA test).
+4. These findings vary by **age, gender**, and **lifestyle factors** like smoking.
 
 Use the sidebar filters to explore these relationships interactively!
 """)
