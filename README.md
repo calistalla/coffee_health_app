@@ -10,7 +10,8 @@ Users can filter by age, country and gender to dynamically view data, correlatio
 ###  Sidebar Filters
  1. **Age range selector** — filter participants by age.  
  2. **Country multiselect** — compare across selected countries.  
- 3. **Gender filter** — focus on male, female, or all participants.  
+ 3. **Gender filter** — focus on male, female, or all participants. 
+ 4. **Show regression line** — display regression line to visualize the overall trend.
 
 ###  Problem A: Coffee vs. Health Metrics
  Scatter plots showing:
@@ -30,7 +31,7 @@ Users can filter by age, country and gender to dynamically view data, correlatio
 
 1. Higher coffee intake shows **moderate correlation** with BMI and Heart Rate.
 2. Sleep Hours tend to **decrease slightly** with higher coffee intake.
-3. No significant cross-country differences exist in coffee consumption (see ANOVA test).
+3. No significant cross-country differences exist in coffee consumption (see **ANOVA test**).
 4. These findings vary by age, gender and countries.
 
 ---
